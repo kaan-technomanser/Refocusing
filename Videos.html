@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Paws for Compassion Alliance</title>
+ <link rel="stylesheet" type="text/css" href="styles.css"/>
+ <link rel="stylesheet" type="text/css" href="logout.css"/>
+ <script src="logout.js"></script>
+ <style>
+    body{
+
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+    }
+    .center{    
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+        text-align-last: left;
+       
+}
+    .points{
+        background-image: url("bgpc.png");
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 400px;
+        margin: 10px;
+        text-align: center;
+        background-color: white;
+        border: 3px solid #497AA2;
+        border-radius: 15px;
+        
+    }
+    .box img {
+        width: 435px;
+        height: auto;
+       
+    }
+    .box h3 {
+        margin-top: 10px;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .box p {
+        font-size: 14px;
+        color: #666;
+    }
+
+</style>
+</head>
+<body>
+ <header>
+    <a href="home.html" class="link-box">HOME</a>
+    <a href="Videos.html" class="link-box">TASKS</a>
+    <a href="Status.html" class="link-box">STATUS</a>
+    <a href="index.html" class="logout-box" id="logout-link">Logout</a>
+ </header>
+ <header class="header-des1">
+ </header>
+ <br>
+ <header class="header-des2">
+    <br>
+    <br>
+    <br>
+ </header>
+ <main>
+    <p id="points">FC Points: 0</p>
+
+    <br><br>
+
+    <div class="container">
+      <div class="box">
+        <a href="https://www.youtube.com/watch?v=FWTNMzK9vG4" target="_blank">
+        <img id="myVideo1" src="thumbnail.png" alt="Video 1 thumbnail" width="420">
+        </a>
+        <h3>Why you procrastinate even when it feels bad</h3>
+      </div>
+
+        <div class="box">
+        <a href="https://www.youtube.com/watch?v=GvXBACCuKmg" target="_blank">
+        <img id="myVideo2" src="thumbnail.png" alt="Video 2 thumbnail" width="420">
+        </a>
+        <h3>What Procrastination Looks Like from the Inside</h3>
+        </div>
+        
+        <div class="box">
+        <a href="https://www.youtube.com/watch?v=48jlHaxZnig" target="_blank">
+        <img id="myVideo3" src="thumbnail.png" alt="Video 3 thumbnail" width="420">
+        </a>
+        <h3>How to Stop Procrastination & Increase Motivation</h3>
+        </div>
+
+        <div class="box">
+        <a href="https://www.youtube.com/watch?v=NIn7opOQWGQ" target="_blank">
+        <img id="myVideo4" src="thumbnail.png" alt="Video 4 thumbnail" width="420">
+        </a>
+        <h3>What Happens When You Procrastinate Too Much
+        </h3>
+      </div>
+    </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    
+ </main>
+ <footer>
+    <p>© Re:Focus</p>
+ </footer>
+
+ <script>
+    var pointsElement = document.getElementById("points");
+    var points = 0;
+    
+    
+    document.getElementById("myVideo1").addEventListener("click", function() {
+      points += 7;
+      pointsElement.textContent = "FC Points: " + points;
+    });
+    
+    
+    document.getElementById("myVideo2").addEventListener("click", function() {
+      points += 7;
+      pointsElement.textContent = "FC Points: " + points;
+    });
+    
+    
+    document.getElementById("myVideo3").addEventListener("click", function() {
+      points += 7;
+      pointsElement.textContent = "FC Points: " + points;
+    });
+    
+    
+    document.getElementById("myVideo4").addEventListener("click", function() {
+      points += 7;
+      pointsElement.textContent = "FC Points: " + points;
+    });
+    </script>
+</body>
+</html>
